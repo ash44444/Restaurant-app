@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Restaurant Menu</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Restaurant</a>
+      <!-- Toggler button for medium and mobile views -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#specials">Specials</a>
+          </li>
+        </ul>
+        <!-- Search input field -->
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            id="search-input"
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search menu items..."
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+        <!-- Filter buttons (Moved to medium and mobile view toggler) -->
+      </div>
+    </nav>
+
+    <!-- Video Banner -->
+    <div class="banner">
+      <video class="banner-video" autoplay loop muted>
+        <source
+          src="https://files.codingninjas.in/restaurant-1706081051.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div class="banner-overlay">
+        <h1 class="banner-title">Welcome to Our Restaurant</h1>
+        <p class="banner-subtitle">Experience the best dining in town.</p>
+      </div>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="container mt-4">
+      <div id="menu" class="row">
+        <!-- Menu Card Template -->
+        <div class="col-md-4 mb-4 menu-item" data-category="appetizers">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/350x150"
+              class="card-img-top"
+              alt="Bruschetta"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bruschetta</h5>
+              <p class="card-text">$7.99</p>
+              <p class="card-text">
+                Grilled bread topped with diced tomatoes, garlic, and basil.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Category: Appetizers</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more menu items as needed with similar structure -->
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
